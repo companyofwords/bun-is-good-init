@@ -7,7 +7,9 @@
   },
   "dependencies": {
     "@elysiajs/html": "^0.7.3",
-    "elysia": "latest"
+    "@types/figlet": "^1.5.8",
+    "elysia": "latest",
+    "figlet": "^1.7.0"
   },
   "devDependencies": {
     "bun-types": "latest"
