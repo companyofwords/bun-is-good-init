@@ -1,10 +1,10 @@
 import { Database } from "bun:sqlite";
 
-export interface StaffMember {
+export type StaffMember = {
   id?: number;
   name: string;
   position: string;
-}
+};
 
 export class StaffMembersDatabase {
   private db: Database;

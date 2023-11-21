@@ -1,7 +1,6 @@
 import { t } from "elysia";
 
-export const signinDTO = t.Object({
-  username: t.String(),
-  password: t.String(),
-  //date: t.Date(),
+export const staffMembers = t.Object({
+  name: t.String(),
+  position: t.String(),
 });
