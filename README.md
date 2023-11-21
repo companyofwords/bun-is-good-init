@@ -55,3 +55,7 @@ Please refer to (Bun Docs) https://bun.sh/docs
 - use CORS
 - use logger
 - use Helmet
+
+# Learningz (Personal)
+
+- '' - a second apostrophe let's you keep an apostrophe in JSON body for sqlite
