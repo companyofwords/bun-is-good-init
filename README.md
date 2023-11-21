@@ -39,6 +39,7 @@ Please refer to (Bun Docs) https://bun.sh/docs
 ## Objectives (Personal)
 
 - explore bun testing
+- use html
 - using sqlite db (using Drizzle ORM later)
 - use typescript
 - use env variables

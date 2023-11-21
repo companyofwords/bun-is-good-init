@@ -2,7 +2,7 @@
   "name": "bun-is-good-init",
   "version": "1.0.50",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "bun test src/test/**.test.ts",
     "dev": "bun run --watch src/index.ts",
     "basic": "bun run --watch src/index.ts"
   },

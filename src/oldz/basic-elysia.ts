@@ -1,7 +1,7 @@
 import { Elysia, t } from "elysia";
-import { plugin } from "./plugin";
+import { plugin } from "../plugin";
 import figlet from "figlet";
-import { signinDTO } from "./models/basic-models";
+import { signinDTO } from "../models/basic-models";
 
 const PORT = process.env.PORT || 3000;
 
