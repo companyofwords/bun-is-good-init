@@ -1,5 +1,6 @@
 import { Elysia, t } from "elysia";
 import { plugin } from "./plugin";
+import figlet from "figlet";
 
 const PORT = process.env.PORT || 3000;
 
@@ -15,7 +16,8 @@ app
   .state({ id: 1, email: "j@jmail.com" })
   .get("/", async (handler) => {
     console.log(handler.request.url, "handler");
-    return { message: "Hey Hey h" };
+    const body = figlet.textSync("Amazing Sylvia Puttick");
+    return body;
   })
   .get("/post/:id", async ({ params: { id } }) => {
     return { id: id, title: "Learn or Burn" };
@@ -41,8 +43,20 @@ app
         },
       }
     );
-  })
-  .listen(PORT);
+  });
+
+app.group("/v1", (app) =>
+  app
+    .get("/", () => "Using v1")
+    .group(
+      "/user",
+      (app) => app.post("/sign-in", () => "sign in....")
+      //.post('/sign-up', signUp)
+      //.post('/profile', getProfile)
+    )
+);
+
+app.listen(PORT);
 
 console.log(
   `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
