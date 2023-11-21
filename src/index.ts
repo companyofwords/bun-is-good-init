@@ -1,63 +1,26 @@
-import { Elysia, t } from "elysia";
-import { plugin } from "./plugin";
-import figlet from "figlet";
+import { Elysia } from "elysia";
+
+// Controllers
+import { infoController } from "./controllers/info";
+import { basicsController } from "./controllers/basics";
 
 const PORT = process.env.PORT || 3000;
 
-const app = new Elysia();
+const scrApp = new Elysia();
+// Initial Information and HTML Redirect
+scrApp.use(basicsController);
+// Basic Company Information
+scrApp.use(infoController);
+// Website information
 
-const secretAppTitle: string = "Bun is good init";
+// Staff
 
-// Application
-app
-  .decorate("secretAppName", secretAppTitle)
-  .decorate("getDate", () => Date.now())
-  .use(plugin)
-  .state({ id: 1, email: "j@jmail.com" })
-  .get("/", async (handler) => {
-    console.log(handler.request.url, "handler");
-    const body = figlet.textSync("Amazing Sylvia Puttick");
-    return body;
-  })
-  .get("/post/:id", async ({ params: { id } }) => {
-    return { id: id, title: "Learn or Burn" };
-  })
-  .post("/post", ({ body, set, store }) => {
-    console.log(store);
-    set.status = 201;
-    return body;
-  })
-  .get("/track/*", () => {
-    return "Track Route";
-  })
-  .get("/tracks", ({ store, getDate }) => {
-    console.log(store, getDate());
-    console.log(store["plugin-version"]);
-    return new Response(
-      JSON.stringify({
-        tracks: ["Dancing Feet", "song 2 "],
-      }),
-      {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
-  });
+// Affiliate
 
-app.group("/v1", (app) =>
-  app
-    .get("/", () => "Using v1")
-    .group(
-      "/user",
-      (app) => app.post("/sign-in", () => "sign in....")
-      //.post('/sign-up', signUp)
-      //.post('/profile', getProfile)
-    )
-);
+// Actual Administrative Access
 
-app.listen(PORT);
+scrApp.listen(PORT);
 
 console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`
+  `🦊 Elysia is now running at ${scrApp.server?.hostname}:${scrApp.server?.port}`
 );
