@@ -1,4 +1,4 @@
-# Bun is good isn't it?
+# Bun is good isn't it? (EXPERIMENTAL)
 
 I am not very good at sharing my code, despite being an extrovert! It has more to do with working for years in corporate where they would look at you funny if you even suggested sharing with a developer community (quite apart from violating regulatory bodies etc...)
 
@@ -22,8 +22,34 @@ To start the development server run:
 bun run dev
 ```
 
+## Test
+
+To start the development server run:
+
+```bash
+bun run dev
+```
+
 Open http://localhost:8889/ to see the results.
 
 Please refer to (Bun Docs) https://bun.sh/docs
 
 (Elysia Docs) https://elysiajs.com/quick-start.html
+
+## Objectives (Personal)
+
+- explore bun testing
+- using sqlite db (using Drizzle ORM later)
+- use typescript
+- use env variables
+- use routers / controllers
+- understand the context handler - res req
+- understand guards / hooks
+- understand middleware, hooks, auths
+- OnResponse, OnError
+- Streams / Blobs
+- Websockets
+- use swagger
+- use CORS
+- use logger
+- use Helmet
