@@ -48,6 +48,7 @@ Please refer to (Bun Docs) https://bun.sh/docs
 - understand middleware, hooks, auths
 - OnResponse, OnError
 - Streams / Blobs
+- file io API / generate txt ---> make some ascii art ---> https://www.npmjs.com/package/figlet / https://devhints.io/figlet
 - Websockets
 - use swagger
 - use CORS
