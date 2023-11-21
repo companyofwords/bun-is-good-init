@@ -23,3 +23,7 @@ bun run dev
 ```
 
 Open http://localhost:8889/ to see the results.
+
+Please refer to (Bun Docs) https://bun.sh/docs
+
+(Elysia Docs) https://elysiajs.com/quick-start.html
