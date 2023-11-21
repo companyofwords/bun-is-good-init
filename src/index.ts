@@ -2,7 +2,7 @@ import { Elysia, t } from "elysia";
 import { html } from "@elysiajs/html";
 
 // Database
-import { BooksDatabase } from "./db.js";
+import { StaffMembersDatabase } from "./db.js";
 
 // Controllers
 import { infoController } from "./controllers/info";
@@ -13,28 +13,28 @@ const PORT = process.env.PORT || 3000;
 
 const scrApp = new Elysia()
   .use(html())
-  .decorate("db", new BooksDatabase())
-  .get("/books", ({ db }) => db.getBooks())
+  .decorate("db", new StaffMembersDatabase())
+  .get("/staff", ({ db }) => db.getStaffMembers())
   .post(
-    "/books",
+    "/staff",
     async ({ db, body }) => {
       console.log(body);
-      const id = (await db.addBook(body)).id;
+      const id = (await db.addStaffMember(body)).id;
       console.log(id);
       return { success: true, id };
     },
     {
       body: t.Object({
         name: t.String(),
-        author: t.String(),
+        position: t.String(),
       }),
     }
   )
   .put(
-    "/books/:id",
+    "/staff/:id",
     ({ db, params, body }) => {
       try {
-        db.updateBook(parseInt(params.id), body);
+        db.updateStaffMember(parseInt(params.id), body);
         return { success: true };
       } catch (e) {
         return { success: false };
@@ -43,13 +43,13 @@ const scrApp = new Elysia()
     {
       body: t.Object({
         name: t.String(),
-        author: t.String(),
+        position: t.String(),
       }),
     }
   )
-  .delete("/books/:id", ({ db, params }) => {
+  .delete("/staff/:id", ({ db, params }) => {
     try {
-      db.deleteBook(parseInt(params.id));
+      db.deleteStaffMember(parseInt(params.id));
       return { success: true };
     } catch (e) {
       return { success: false };

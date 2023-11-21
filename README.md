@@ -24,10 +24,10 @@ bun run dev
 
 ## Test
 
-To start the development server run:
+To run test:
 
 ```bash
-bun run dev
+bun run test
 ```
 
 Open http://localhost:8889/ to see the results.
@@ -55,6 +55,8 @@ Please refer to (Bun Docs) https://bun.sh/docs
 - use CORS
 - use logger
 - use Helmet
+
+Done:
 
 # Learningz (Personal)
 
