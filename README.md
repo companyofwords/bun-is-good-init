@@ -10,7 +10,7 @@ Elysia appears to be the most highly rated and fastest alternative to Express
 
 ## Just the way my grandpappy (or elderly Node JS developer colleagues) did it
 
-...tumble weed tumble weed...Bun is still as of writing on version 1 - so will very much evolve...but here I have started to translate over... Currently this is very experimental as we find our way so bear with me.
+...tumble weed tumble weed...Bun is still as of writing on version 1 - so will very much evolve...but here I have started to translate over previous Node JS endeavours, obviously with a bit of a sprinkling of that new Bun shizzle... Currently this is very experimental as we find our way so bear with me.
 
 ## Getting Started / Basics Info
 
