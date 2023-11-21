@@ -61,3 +61,4 @@ Done:
 # Learningz (Personal)
 
 - '' - a second apostrophe let's you keep an apostrophe in JSON body for sqlite
+- updating autoincrement to 666 is hard
