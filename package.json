@@ -7,9 +7,13 @@
     "basic": "bun run --watch src/index.ts"
   },
   "dependencies": {
+    "@elysiajs/cors": "^0.7.2",
     "@elysiajs/html": "^0.7.3",
+    "@elysiajs/swagger": "^0.7.4",
+    "@grotto/logysia": "^0.0.5",
     "@types/figlet": "^1.5.8",
     "elysia": "latest",
+    "elysia-helmet": "^1.0.1",
     "figlet": "^1.7.0"
   },
   "devDependencies": {

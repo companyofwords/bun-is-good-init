@@ -1,11 +1,13 @@
-import { staffMembers } from "./../models/basic-models";
+import { staffMembers } from "../models/basic-models";
 import { Elysia, t } from "elysia";
 
 // Database
 import { StaffMembersDatabase } from "../db.js";
 
 // Company Information
-export const staffController = new Elysia()
+export const dbController = new Elysia({
+  prefix: "/sqlite-example",
+})
   .state("staff-version", 10001)
   .decorate("db", new StaffMembersDatabase())
   .group("/staff", (app) =>
