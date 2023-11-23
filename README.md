@@ -40,6 +40,8 @@ Please refer to (Bun Docs) https://bun.sh/docs
 
 (Elysia Docs) https://elysiajs.com/quick-start.html
 
+<!---
+
 ## Objectives (Personal)
 
 - handlers and context - body, query, params, store, set . status / headers / redirect
@@ -55,7 +57,7 @@ Please refer to (Bun Docs) https://bun.sh/docs
 - understand middleware, hooks, auths
 - OnResponse, OnError
 - Streams / Blobs
-- file io API / generate txt ---> make some ascii art ---> https://www.npmjs.com/package/figlet / https://devhints.io/figlet
+- file io API / generate txt - make some ascii art - https://www.npmjs.com/package/figlet / https://devhints.io/figlet
 - Websockets
 - use swagger
 - use CORS
@@ -64,7 +66,11 @@ Please refer to (Bun Docs) https://bun.sh/docs
 
 Done:
 
+
 # Learningz (Personal)
 
 - '' - a second apostrophe let's you keep an apostrophe in JSON body for sqlite
 - updating autoincrement to 666 is hard
+
+
+--->

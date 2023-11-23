@@ -10,10 +10,10 @@ export class StaffMembersDatabase {
   private db: Database;
 
   constructor() {
-    this.db = new Database("staff.db");
+    this.db = new Database("sqlite-example.db");
     // Initialize the database
     this.init()
-      .then(() => console.log("Staff Member Database initialized"))
+      .then(() => console.log("SQ Lite Db Example Database initialized"))
       .catch(console.error);
   }
 
