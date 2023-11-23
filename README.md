@@ -1,4 +1,4 @@
-# Bun is good isn't it? (EXPERIMENTAL)
+# Bun.js is good isn't it? (Initial Cooking Experiments)
 
 1, 2. 1, 2. This is a test!
 
@@ -6,7 +6,7 @@ Ready for a big new project, I have been creating an API and CRUD app using Bun.
 
 I want to see whether Bun.js and Elysia.js are as good and stand up
 
-## Or More specifically Elysia with Bun is really good isn't it?
+## Or More specifically Elysia.js with Bun is really good isn't it?
 
 Bun.js is the much-vaunted like-for-like Node.js alternative (or Swiss Army knife for developers with lots of extras). Elysia is the most highly rated and proven fastest alternative to Express.
 
