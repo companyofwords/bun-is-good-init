@@ -1,16 +1,20 @@
 # Bun is good isn't it? (EXPERIMENTAL)
 
-I am not very good at sharing my code, despite being an extrovert! It has more to do with working for years in corporate where they would look at you funny if you even suggested sharing with a developer community (quite apart from violating regulatory bodies etc...)
+1, 2. 1, 2. This is a test!
+
+Ready for a big new project, I have been creating an API and CRUD app using Bun.js and Elysia.js - using tools and patterns from Node.js and Express.
+
+I want to see whether Bun.js and Elysia.js are as good and stand up
 
 # Or More specifically Elysia with Bun is really good isn't it?
 
-Anyhow, here are some initial experiments at using Bun JS - a recent alternative to Node JS to do some of the things I have needed Node JS to do in the past...
+Bun.js is the much-vaunted like-for-like Node.js alternative. Elysia is the most highly rated and proven fastest alternative to Express.
 
-Elysia appears to be the most highly rated and fastest alternative to Express
+I have been following along with the following doc pages
 
-## Just the way my grandpappy (or elderly Node JS developer colleagues) did it
+You can find out more about Bun.js at [https://bun.sh/docs](https://bun.sh/docs) or Elysia.js on [https://elysiajs.com/quick-start.html](https://elysiajs.com/quick-start.html).
 
-...tumble weed tumble weed...Bun is still as of writing on version 1 - so will very much evolve...but here I have started to translate over previous Node JS endeavours, obviously with a bit of a sprinkling of that new Bun shizzle... Currently this is very experimental as we find our way so bear with me.
+Note - Bun.js is still as of writing on version 1 - so will very much evolve...so this code may change too.
 
 ## Getting Started / Basics Info
 
