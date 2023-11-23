@@ -16,6 +16,8 @@ export const documentation = new Elysia().use(
           url: "web.com", // your website
         },
       },
+      tags: [{ name: "App", description: "General endpoints" }],
     },
+    exclude: ["/docs", "/docs/json"],
   })
 );
