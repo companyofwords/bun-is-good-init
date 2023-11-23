@@ -12,7 +12,7 @@ Bun.js is the much-vaunted like-for-like Node.js alternative (seen also as a Swi
 
 Bun.js should really be called Bun.ts because it uses TYPESCRIPT out of the box!
 
-I have been following along with the following doc pages
+I have been following along with these doc pages
 
 You can find out more about Bun.js at [https://bun.sh/docs](https://bun.sh/docs) or Elysia.js on [https://elysiajs.com/quick-start.html](https://elysiajs.com/quick-start.html).
 
