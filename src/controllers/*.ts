@@ -11,6 +11,6 @@ export const api = new Elysia({
 })
 
   .use(basicsController)
-  .use(experimentsController)
   .use(infoController)
+  .use(experimentsController)
   .use(dbController);

@@ -33,8 +33,15 @@ const app = new Elysia()
       path: "/docs", // endpoint which swagger will appear on
       documentation: {
         info: {
-          title: "Bun.js CRUD app with Elysia.js",
-          version: "1.0.0",
+          title: "'Bun.js is good init' Experiments",
+          description:
+            "This is a test! Creating an API and CRUD app with Bun.js and Elysia.js - using tools and patterns from Node.js and Express.  You can find out more about Bun.js at [https://bun.sh/docs](https://bun.sh/docs) or Elysia.js on [https://elysiajs.com/quick-start.html](https://elysiajs.com/quick-start.html).  For authorisation features, you can use the api key `good-init`. For more information about creating the documentation go to [https://elysiajs.com/patterns/creating-documentation.html](https://elysiajs.com/patterns/creating-documentation.html).",
+          version: "1.0.1",
+          contact: {
+            name: "Neil Puttick", // your name
+            email: "neil@wordsco.uk", // your email
+            url: "https://wordsco.uk", // your website
+          },
         },
       },
     })
