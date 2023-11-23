@@ -6,9 +6,9 @@ Ready for a big new project, I have been creating an API and CRUD app using Bun.
 
 I want to see whether Bun.js and Elysia.js are as good and stand up
 
-# Or More specifically Elysia with Bun is really good isn't it?
+## Or More specifically Elysia with Bun is really good isn't it?
 
-Bun.js is the much-vaunted like-for-like Node.js alternative. Elysia is the most highly rated and proven fastest alternative to Express.
+Bun.js is the much-vaunted like-for-like Node.js alternative (or Swiss Army knife for developers with lots of extras). Elysia is the most highly rated and proven fastest alternative to Express.
 
 I have been following along with the following doc pages
 
@@ -18,7 +18,7 @@ Note - Bun.js is still as of writing on version 1 - so will very much evolve...s
 
 ## Getting Started / Basics Info
 
-## Development
+### Development
 
 To start the development server run:
 
@@ -26,7 +26,9 @@ To start the development server run:
 bun run dev
 ```
 
-## Test
+Open http://localhost:8889/ to see the results.
+
+### Test
 
 To run test:
 
@@ -34,7 +36,15 @@ To run test:
 bun run test
 ```
 
-Open http://localhost:8889/ to see the results.
+## Experiments
+
+### Documentation (using Swagger)
+
+### Testing
+
+Using Bun JS testing suite
+
+### Elysia and Bun JS docs
 
 Please refer to (Bun Docs) https://bun.sh/docs
 
