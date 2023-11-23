@@ -4,11 +4,13 @@
 
 Ready for a big new project, I have been creating an API and CRUD app using Bun.js and Elysia.js - using tools and patterns from Node.js and Express.
 
-I want to see whether Bun.js and Elysia.js are as good and stand up
+I want to see whether Bun.js and Elysia.js are as good and stand up as the old stuff...
 
 ## Or More specifically Elysia.js with Bun is really good isn't it?
 
-Bun.js is the much-vaunted like-for-like Node.js alternative (or Swiss Army knife for developers with lots of extras). Elysia is the most highly rated and proven fastest alternative to Express.
+Bun.js is the much-vaunted like-for-like Node.js alternative (seen also as a Swiss Army knife for developers with lots of extras - testing, managing packages and bundling obviously). Elysia is the most highly rated and proven fastest alternative to Express.
+
+Bun.js should really be called Bun.ts because it uses TYPESCRIPT out of the box!
 
 I have been following along with the following doc pages
 
