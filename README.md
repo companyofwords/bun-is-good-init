@@ -1,4 +1,4 @@
-# Bun.js is good isn't it? (Initial Cooking Experiments)
+# Bun.js is good isn't it? (Initial API baking experiments)
 
 1, 2. 1, 2. This is a test!
 
