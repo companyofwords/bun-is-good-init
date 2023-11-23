@@ -1,33 +1,35 @@
 import { Elysia } from "elysia";
 
 // Plugins
-import { html } from "@elysiajs/html";
 import { logger } from "@grotto/logysia";
 import { cors } from "@elysiajs/cors";
 import { helmet } from "elysia-helmet";
 import swagger from "@elysiajs/swagger";
 
-// Controllers
+// Routes & Controllers
 import { api } from "./controllers/*";
 
-// Documentation
-import { documentation } from "./documentation";
+// Pages
+import { pages } from "./pages/*";
 
 const PORT = process.env.PORT || 3000;
 
 const app = new Elysia()
-  // Logger
-  //.use(logger())
+  // Logger - logs all requests below
+  .use(logger())
+
+  // Security
   // CORS
-  //.use(cors(/* your options */))
+  .use(cors(/* your options */))
   // Helmet
   // .use(
   //   helmet({
   //     /* your options */
   //   })
   // )
-
-  // Documentation
+  // JSX Pages
+  .use(pages)
+  // Documentation - using Swagger OpenAPI automatically generates docs from API below
   .use(
     swagger({
       path: "/docs", // endpoint which swagger will appear on
@@ -47,9 +49,6 @@ const app = new Elysia()
       },
     })
   )
-  //.get("/", () => "hi")
-  // Initial Information and HTML Redirect
-  //.use(html())
   // Wildcard Centralised API routes/controllers
   .use(api)
   // .onStart(({ log }) => {
@@ -61,7 +60,6 @@ const app = new Elysia()
   // })
   .onError(({ code, error, request }) => {
     console.error(` ${request.method} ${request.url}`, code, error);
-    //console.error(error);
   })
   .listen(PORT);
 
