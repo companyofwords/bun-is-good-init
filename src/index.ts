@@ -33,7 +33,7 @@ const app = new Elysia()
   .use(
     swagger({
       path: "/docs", // endpoint which swagger will appear on
-      exclude: ["/docs", "/docs/json"],
+      exclude: ["/docs", "/docs/json", "/"],
       documentation: {
         info: {
           title: "'Bun.js is good init' Experiments",

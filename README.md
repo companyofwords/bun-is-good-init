@@ -59,7 +59,7 @@ Please refer to (Bun Docs) https://bun.sh/docs
 ## Objectives (Personal)
 
 - handlers and context - body, query, params, store, set . status / headers / redirect
-
+-cron
 - explore bun testing
 - use html
 - using sqlite db (using Drizzle ORM later)
