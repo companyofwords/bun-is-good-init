@@ -4,7 +4,12 @@ import figlet from "figlet";
 // Company Information
 
 export const basicsController = new Elysia()
+
   .state("version", 10001)
+  // Hooks (Middleware) - on Request
+  .onRequest(async ({ request }) => {
+    console.log(request.headers.get("myheader"), "request");
+  })
   // Basics
   .get(
     "/",
@@ -15,11 +20,18 @@ export const basicsController = new Elysia()
 
       return body;
     },
-    // Adding details and tags so the API shows up in the swagger openAPI gui
     {
+      beforeHandle: ({ set, request: { headers } }) => {
+        set.headers["Set-Cookie"] = "555";
+        //console.log("Before Handle", headers);
+      },
       detail: {
         summary: "Basic return body",
         tags: ["Basic Examples"],
+      },
+      afterHandle: ({ set, request: { headers } }) => {
+        //headers.set("Set-Cookie") "4444";
+        //console.log("Before Handle", headers);
       },
     }
   )
@@ -66,3 +78,12 @@ export const basicsController = new Elysia()
       },
     }
   );
+// Use Derive to customise context reactively
+//.decorate("getDate", () => Date.now())
+// .derive(({ request: { headers }, store, getDate }) => {
+//   return {
+//     authorization: headers.get("Authorization"),
+//   };
+// })
+//.get("/head-check ", ({ authorization }) => authorization);
+//

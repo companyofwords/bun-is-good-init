@@ -58,6 +58,8 @@ Please refer to (Bun Docs) https://bun.sh/docs
 
 ## Objectives (Personal)
 
+-derive - make changes in real time / inject
+
 - handlers and context - body, query, params, store, set . status / headers / redirect
 -cron
 - explore bun testing
